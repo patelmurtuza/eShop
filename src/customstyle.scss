@@ -1,0 +1,81 @@
+@import "~@angular/material/theming";
+@mixin theme-purple($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get( $theme, accent);
+    $primecolor: mat-color($primary, 500);
+    .highlight {
+        background: rgba($primecolor, .4);
+    }
+    .col-primary {
+        color: mat-color($primary, 500) !important;
+    }
+    .col-accent {
+        color: mat-color($accent, 300) !important;
+    }
+    .bg-primary {
+        background: mat-color($primary, 500) !important;
+    }
+    .active-link {
+        background: mat-color($primary, 500) !important;
+    }
+    .cls-1 {
+        fill: mat-color($primary, 500) !important;
+    }
+    .main-search:after {
+        background: rgba($primecolor, .4);
+    }
+}
+
+@mixin theme-yellow($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get( $theme, accent);
+    $primecolor: mat-color($primary, 500);
+    .highlight {
+        background: rgba($primecolor, .4);
+    }
+    .col-primary {
+        color: mat-color($primary, 500) !important;
+    }
+    .col-accent {
+        color: mat-color($accent, 300) !important;
+    }
+    .bg-primary {
+        background: mat-color($primary, 500) !important;
+    }
+    .active-link {
+        background: mat-color($primary, 500) !important;
+    }
+    .cls-1 {
+        fill: mat-color($primary, 500) !important;
+    }
+    .main-search:after {
+        background: rgba($primecolor, .4);
+    }
+}
+
+@mixin theme-green($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get( $theme, accent);
+    $primecolor: mat-color($primary, 500);
+    .highlight {
+        background: rgba($primecolor, .4);
+    }
+    .col-primary {
+        color: mat-color($primary, 500) !important;
+    }
+    .col-accent {
+        color: mat-color($accent, 300) !important;
+    }
+    .bg-primary {
+        background: mat-color($primary, 500) !important;
+    }
+    .active-link {
+        background: mat-color($primary, 500) !important;
+    }
+    .cls-1 {
+        fill: mat-color($primary, 500) !important;
+    }
+    .main-search:after {
+        background: rgba($primecolor, .4);
+    }
+}

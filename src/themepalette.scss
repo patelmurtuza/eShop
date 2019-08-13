@@ -1,0 +1,32 @@
+@import '~@angular/material/theming';
+@import './customstyle.scss';
+@include mat-core();
+$md-fpyellow: ( 50: #fffde8, 100: #fff9c5, 200: #fff69e, 300: #fff277, 400: #ffef5a, 500: #ffec3d, 600: #ffea37, 700: #ffe72f, 800: #ffe427, 900: #ffdf1a, A100: #ffffff, A200: #fffffe, A400: #fff7cb, A700: #fff3b2, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #000000, 600: #000000, 700: #000000, 800: #000000, 900: #000000, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+$md-fppurple: ( 50: #eeedfd, 100: #d5d1fb, 200: #b9b3f8, 300: #9d95f5, 400: #887ef2, 500: #7367f0, 600: #6b5fee, 700: #6054ec, 800: #564ae9, 900: #4339e5, A100: #ffffff, A200: #fcfcff, A400: #ccc9ff, A700: #b3afff, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+$md-fpgreen: ( 50: #e7efe4, 100: #c3d6bb, 200: #9cbb8e, 300: #749f61, 400: #568b3f, 500: #38761d, 600: #326e1a, 700: #2b6315, 800: #245911, 900: #17460a, A100: #94ff7d, A200: #6aff4a, A400: #40ff17, A700: #2dfc00, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+.fp-yellow {
+    $fp-yellow-primary: mat-palette($md-fpyellow);
+    $fp-yellow-accent: mat-palette($md-fpyellow, 500, 900, A100);
+    $fp-yellow-warn: mat-palette($mat-deep-orange);
+    $fp-yellow-theme: mat-light-theme($fp-yellow-primary, $fp-yellow-accent, $fp-yellow-warn);
+    @include angular-material-theme($fp-yellow-theme);
+    @include theme-yellow($fp-yellow-theme);
+}
+
+.fp-purple {
+    $fp-purple-primary: mat-palette($md-fppurple);
+    $fp-purple-accent: mat-palette($md-fppurple, 500, 900, A100);
+    $fp-purple-warn: mat-palette($mat-deep-orange);
+    $fp-purple-theme: mat-light-theme($fp-purple-primary, $fp-purple-accent, $fp-purple-warn);
+    @include angular-material-theme($fp-purple-theme);
+    @include theme-purple($fp-purple-theme);
+}
+
+.fp-green {
+    $fp-green-primary: mat-palette($md-fpgreen);
+    $fp-green-accent: mat-palette($md-fpgreen, 500, 900, A100);
+    $fp-green-warn: mat-palette($mat-deep-orange);
+    $fp-green-theme: mat-light-theme($fp-green-primary, $fp-green-accent, $fp-green-warn);
+    @include angular-material-theme($fp-green-theme);
+    @include theme-green($fp-green-theme);
+}
