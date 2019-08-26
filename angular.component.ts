@@ -8,4 +8,4 @@ export {
   Injectable, NgModule, Component, ViewContainerRef, CommonModule,
   RouterModule, Routes, Router, FormsModule, HttpModule,Http, Input, Output, AfterViewInit,
   EventEmitter, ViewEncapsulation, NgZone, ViewChild, ElementRef, Renderer, Renderer2, HostListener, DatePipe, DecimalPipe
-}
+};
